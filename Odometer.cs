@@ -14,8 +14,8 @@ namespace CarPractice
          Perform reset validation in the counter’s setter, where if the new value would go over 999999, reset it to 0 and apply the excess (for example, 999980 + 40 = 000020). 
         
          */
-        private int _counter;
-        public int Counter { 
+        private double _counter;
+        public double Counter { 
             get
             {
                 return _counter;
@@ -36,13 +36,13 @@ namespace CarPractice
             Counter = 0;
         }
 
-        public Odometer(int counter)
+        public Odometer(double counter)
         {
             Counter = counter;
         }
 
         //and an Increment(count) method which will add the count to the counter.
-        public void Increment(int counter)
+        public void Increment(double counter)
         {
             Counter = counter;
         }

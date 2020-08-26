@@ -9,7 +9,11 @@ namespace CarPractice
 
             Car newCar = new Car();
             Console.WriteLine($"{newCar.CarOdo.Counter}");
-            Console.WriteLine($"{newCar.CarTank.Capacity}");
+            Console.WriteLine($"{newCar.CarTank.Level}");
+            Console.WriteLine($"{newCar.Color}");
+            newCar.Drive(23);
+            Console.WriteLine($"{newCar.CarOdo.Counter}");
+            Console.WriteLine($"{newCar.CarTank.Level}");
             Console.WriteLine($"{newCar.Color}");
         }
     }

@@ -45,7 +45,7 @@ namespace CarPractice
             CarOdo.Increment(10);
         }
 
-        public void Drive(int km)
+        public void Drive(double km)
         {
             CarTank.BurnFuel(km);
             CarOdo.Increment(km);
