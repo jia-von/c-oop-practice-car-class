@@ -32,7 +32,7 @@ namespace CarPractice
                 {
                     _capacity = 50;
                 }
-                _capacity = value;
+                _capacity = Math.Round(value, 2);
             }
         }
         private double _level;
@@ -47,7 +47,7 @@ namespace CarPractice
                 {
                     throw new Exception("Oh BOIIII WE NEED HELP!!!! ");
                 }
-                _level = value;
+                _level = Math.Round(value, 2);
             } 
         }
 

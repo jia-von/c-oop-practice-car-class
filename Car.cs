@@ -42,7 +42,7 @@ namespace CarPractice
 
         public override string ToString()
         {
-            return $"A {Color} {Make} {Model} with {CarOdo.Counter} km on the odometer. The current fuel level in the tank is {CarTank.Level} litres. The fuel tank capacity of this car to be filled is {CarTank.Capacity} This car has enough fuel to travel {CarTank.Level/FuelEfficiency} km.";
+            return $"A {Color} {Make} {Model} with {CarOdo.Counter} km on the odometer. The current fuel level in the tank is {CarTank.Level} litres. The fuel tank capacity of this car to be filled is {CarTank.Capacity} This car has enough fuel to travel {Math.Round(CarTank.Level/FuelEfficiency,2)} km.";
         }
 
         //default drive have 10km
