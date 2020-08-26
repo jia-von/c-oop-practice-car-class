@@ -6,7 +6,11 @@ namespace CarPractice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Car newCar = new Car();
+            Console.WriteLine($"{newCar.CarOdo.Counter}");
+            Console.WriteLine($"{newCar.CarTank.Capacity}");
+            Console.WriteLine($"{newCar.Color}");
         }
     }
 }
