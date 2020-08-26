@@ -41,13 +41,14 @@ namespace CarPractice
         //default drive have 10km
         public void Drive()
         {
-            CarTank.BurnFuel(10);
-            CarOdo.Increment(10);
+            Drive(10);
         }
 
         public void Drive(double km)
         {
-            CarTank.BurnFuel(km);
+            double fuelUsed = FuelEfficiency * km;
+            CarTank.BurnFuel(fuelUsed);
+            CarTank.Fill(fuelUsed);
             CarOdo.Increment(km);
         }
     }
