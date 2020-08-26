@@ -44,7 +44,7 @@ namespace CarPractice
         //and an Increment(count) method which will add the count to the counter.
         public void Increment(double counter)
         {
-            Counter = counter;
+            Counter += counter;
         }
     }
 }

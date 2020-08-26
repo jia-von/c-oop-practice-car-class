@@ -42,7 +42,7 @@ namespace CarPractice
 
         public override string ToString()
         {
-            return $"A {Color} {Make} {Model} with {CarOdo.Counter} km on the odometer, that has uenough fuel to travel {CarTank.Level} km.";
+            return $"A {Color} {Make} {Model} with {CarOdo.Counter} km on the odometer. The current fuel level in the tank is {CarTank.Level} litres. The fuel tank capacity of this car to be filled is {CarTank.Capacity} This car has enough fuel to travel {CarTank.Level/FuelEfficiency} km.";
         }
 
         //default drive have 10km
@@ -53,9 +53,8 @@ namespace CarPractice
 
         public void Drive(double km)
         {
-            double fuelUsed = FuelEfficiency * km;
-            CarTank.BurnFuel(fuelUsed);
-            CarTank.Fill(fuelUsed);
+            CarTank.BurnFuel(FuelEfficiency * km);
+            CarTank.Fill(FuelEfficiency * km);
             CarOdo.Increment(km);
         }
     }

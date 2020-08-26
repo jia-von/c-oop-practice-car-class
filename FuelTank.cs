@@ -66,7 +66,7 @@ namespace CarPractice
 
         public void Fill(double litres)
         {
-            Capacity -= litres;
+            Capacity = litres;
         }
     }
 }
