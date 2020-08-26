@@ -38,6 +38,13 @@ namespace CarPractice
             CarOdo = new Odometer();
         }
 
+        //A ToString() override that will output the format “A Blue Chevy Cruze with 60050KM on the odometer, that has enough fuel to travel 65KM.”
+
+        public override string ToString()
+        {
+            return $"A {Color} {Make} {Model} with {CarOdo.Counter} km on the odometer, that has uenough fuel to travel {CarTank.Level} km.";
+        }
+
         //default drive have 10km
         public void Drive()
         {
