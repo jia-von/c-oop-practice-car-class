@@ -58,6 +58,11 @@ namespace CarPractice
             Level = 50;// in litres
         }
 
+        public FuelTank(double capacity, double level)
+        {
+            Capacity = capacity;//in litres
+            Level = level;// in litres
+        }
 
         public void BurnFuel(double litres)
         {

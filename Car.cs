@@ -38,6 +38,17 @@ namespace CarPractice
             CarOdo = new Odometer();
         }
 
+        //Greedy constructor
+        public Car(string make, string model, string color, int maxOccupancy, double fuelEfficiency, double capacity, double level, double odometer)
+        {
+            Make = make;
+            Model = model;
+            Color = color;
+            MaxOccupancy = maxOccupancy;
+            FuelEfficiency = fuelEfficiency; //Litres/Km
+            CarTank = new FuelTank(capacity, level);
+            CarOdo = new Odometer(odometer);
+        }
         //A ToString() override that will output the format “A Blue Chevy Cruze with 60050KM on the odometer, that has enough fuel to travel 65KM.”
 
         public override string ToString()

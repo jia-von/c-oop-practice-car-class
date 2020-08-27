@@ -22,9 +22,10 @@ namespace CarPractice
             }
             private set
             {
-                if(value> 999999)
+                if(value>999999)
                 {
-                    _counter = value - 999999;
+                    value -= 999999;
+                    //Bo-Cen completed on August 26, 2020. 
                 }
                 _counter = value;
             }
